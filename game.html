@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country Guessing Game</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <a href="home.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="services.html">Services</a>
+            <a href="game.html" id="gameLink">Game</a>
+        </nav>
+    </header>
+
+    <main id="gameSection">
+        <div id="game">
+            <h1>Country Guessing Game</h1>
+            <img id="gameImage" src="./public/your_image.jpg" alt="Game Image">
+            <p id="score">Score: 0</p>
+            <p id="timer">Time: 45</p>
+            <p>Guess the Country based on hints:</p>
+            <p id="hints">Hint: </p>
+            <input type="text" id="userInput" placeholder="Enter your guess">
+            <button onclick="checkGuess()">Check</button>
+            <p id="result"></p>
+            <p id="category"></p>
+            <div id="gameContent"></div>
+            <button id="nextButton" onclick="nextRound()" style="display: none;">Next</button>
+        </div>
+
+        <div id="mythicalCreatureSection" style="display: block;">
+            <h2>Mythical Creature Earned:</h2>
+            <p id="mythicalCreature"></p>
+            <div id="creatureInfo"></div> <!-- This is the new element -->
+            <img id="creatureImage" src="" alt="Mythical Creature Image"> 
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; CultivateGames 2024</p> 
+    </footer>
+
+</body>
+</html>
